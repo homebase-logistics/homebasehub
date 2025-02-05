@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HomeBaseHub | Home page</title>
+
+</head>
+
+<body>
+    <header class="flex">
+        <a href="index.html">
+            <h1 id="head-logo">HomebaseHub</h1>
+        </a>
+
+        <nav>
+            <ul class="flex">
+                <li><a href="about.html"> ABOUT US</a> </li>
+                <li><a href="services.html">Service</a> </li>
+                <li><a href="contact.html"> Contact</a> </li>
+                <li><a href="application.html" class="btn">Join the Team</a> </li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+    <main>
+        <section class="intro">
+            <div id="top-right-pattern">
+            </div>
+            <div class="flex">
+                <div>
+                    <hr />
+                    <h1 id="desktop">HomebaseHub Vision</h1>
+                    <p id="desktop"> At Homebase Hub, our vision is to be a leading logistics partner, recognized for
+                        innovation, efficiency, and unmatched customer service. We aim to connect businesses and
+                        individuals through reliable delivery solutions, fostering seamless movement of goods from point
+                        to point. Driven by technology and a commitment to excellence, we aspire to set new industry
+                        standards by delivering sustainability, speed, and trust at every mile.</p>
+                    <!-- <a href="#" class="btn" id="desktop"> View Plans </a> -->
+                </div>
+                <!-- <img src="images/image-intro-desktop.jpg" /> -->
+                <img src="images/home-page-delivery.jpg" alt="Delivery" style="height: 600px; ">
+            </div>
+            <div id="bottom-left-pattern">
+            </div>
+        </section>
+    </main>
+
+    <section class="different">
+        <div>
+            <hr />
+            <h2>We’re different</h2>
+
+            <div class="flex">
+                <article>
+                    <img src="images/icon-Snappy-Process.svg" />
+                    <h3> Snappy Process </h3>
+                    <p>Our application process can be completed in minutes, not hours. Don’t get
+                        stuck filling in tedious forms.</p>
+                </article>
+                <article>
+                    <img src="images/icon-affordable-prices.svg" />
+                    <h3>Affordable Prices</h3>
+                    <p> We don’t want you worrying about high monthly costs. Our prices may be low,
+                        but we still offer the best coverage possible.</p>
+                </article>
+                <article>
+                    <img src="images/icon-people-first.svg" />
+                    <h3>Customer First</h3>
+                    <p>Our services aren’t filled with hidden terms or complex conditions. We make sure your shipments
+                        are handled when you need it.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="findout">
+        <div class="flex">
+            <div id="findout-pattern">
+            </div>
+            <h2> Find out more <br />about us</h2>
+            <a href="about.html" class="btn">ABOUT US</a>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div id="pattern">
+        </div>
+        <div>
+            <section class="flex">
+                <a href="index.html">
+                    <h1>Homebase Hub</h1>
+                </a>
+                <div>
+                    <a href="#">
+                        <img src="images/icon-facebook.svg" />
+                    </a>
+                    <a href="#">
+                        <img src="images/icon-twitter.svg" />
+                    </a>
+                    <a href="#">
+                        <img src="images/icon-pinterest.svg" />
+                    </a>
+                    <a href="#">
+                        <img src="images/icon-instagram.svg" />
+                    </a>
+                </div>
+            </section>
+            <hr />
+
+            <section class="flex" id="column">
+                <div>
+                    <p>Our company</p>
+                    <ul>
+                        <li><a href="about.html"> How we work</a></li>
+                        <li><a href="about.html"> About Us </a></li>
+                        <li><a href="application.html">Join Our Team</a></li>
+                        <li><a href="contact.html">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Help me</p>
+                    <ul>
+                        <li><a href="contact.html"> FAQ</a></li>
+                        <li><a href="services.html"> Terms of use</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p> Contact</p>
+                    <ul>
+                        <li><a href="#">Sales</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                        <li><a href="contact.html"> Live chat</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Others</p>
+                    <ul>
+                        <li><a href="application.html">Carrers</a></li>
+                        <li><a href="contact.html">Press</a></li>
+                        <li><a href="#"> Licenses</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script>
+       const hamburgerBtn = document.getElementById('hamburger-btn');
+const mobileMenu = document.querySelector('.nav-menu');
+
+hamburgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('show');
+});
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply For Job- Homebase Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 5px;
+            padding: 0;
+            line-height: 1.6;
+            background-color: hsl(0, 0%, 98%);
+        }
+
+        .head-div {
+            background-color:  hsl(256, 26%, 20%);
+            color: white;
+            padding: 10px;
+        }
+
+        form {
+            background-color: white;
+            padding: 40px;
+            margin: 30px;
+        }
+
+        input[type=text], input[type=tel], input[type=email], select, textarea, input[type=file] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        button {
+            font-size: 20px;
+            background: green;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+            height: 40px;
+        }
+
+        button:hover {
+            background: blue;
+        }
+
+        .first {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 30px;
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+        }
+
+        .home-link:hover {
+            background-color: #004494;
+        }
+
+        /* Responsive Styles for Mobile Devices */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                background-color: #FFEB99;
+            }
+
+            form {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .head-div {
+                text-align: center;
+                padding: 20px;
+            }
+
+            .first {
+                font-size: 24px;
+                bottom: 50px;
+                right: 10px;
+            }
+
+            input[type=text], input[type=tel], input[type=email], select, textarea, input[type=file] {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            button {
+                font-size: 18px;
+                padding: 8px;
+            }
+        }
+    </style>
+    <script>
+        function displayConfirmation(event) {
+            event.preventDefault(); // Prevents form submission
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const position = document.getElementById("position").value;
+
+            alert(`Thank you for completing the application form, ${name}!
+
+Here are your submission details:
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Position Applied: ${position}
+
+Our team will review your application and get back to you shortly.
+Confirmation Code: WRD517773`);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="head-div">
+        <h1>Join Our Team- Homebase Hub</h1>
+        <p id="first-p">We're looking for talented individuals to help us deliver exceptional services.</p>
+    </div>
+    <form onsubmit="displayConfirmation(event)">
+        <h2 class="personal-info">Personal Information: </h2>
+
+        <div class="Full-Name">
+            <label for="Name">Full Name: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <div class="number">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" required>
+        </div>
+
+        <div class="email">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="postion">
+            <label for="position">Position Applied For:</label>
+            <select id="position" name="position" required>
+                <option value="">Select a position</option>
+                <option value="data-entry">Data Entry Specialist</option>
+                <option value="customer-service">Customer Service Representative</option>
+                <option value="both">Both</option>
+            </select>
+        </div>
+
+        <h2 class="address">Address</h2>
+        <input type="text" name="address" id="address" placeholder="Street Address">
+        <input type="text" name="city" id="city" placeholder="City">
+        <input type="text" name="state" id="state" placeholder="State">
+        <input type="text" name="postal" id="postal" placeholder="Postal/Zip Code">
+        <select name="Country" id="Country">
+            <option value="">Country</option>
+            <option value="USA">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">United Kingdom</option>
+        </select>
+
+        <div>
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume">
+        </div>
+
+        <div>
+            <label for="cover-letter">Cover Letter:</label>
+            <textarea id="cover-letter" name="cover-letter" rows="5"></textarea>
+        </div>
+
+        <input type="submit" value="Submit">
+        <p>Note: After the form is submitted, go through the popup alert and also look out for your application confirmation.</p>
+    </form>
+
+    <a href="index.html"><i class="fa fa-home first"></i></a>
+</body>
+
+</html>
